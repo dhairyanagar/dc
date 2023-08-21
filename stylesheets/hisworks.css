@@ -1,0 +1,187 @@
+/* Top Navigation Bar */
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 5px 0;
+  box-shadow: 0px 5px 0px #dedede;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+/* Small Transistions */
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+
+
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 1s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+/* Color Change on Hover */
+nav.fill ul li a:hover {
+  color: rgb(0, 0, 0);
+  z-index: 1;
+}
+
+/* Page Codes */
+
+.body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    overflow: hidden;
+  }
+/* Background Video Container */
+  #video-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+  }
+/* Background Video Styling */
+  #background-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  #content-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+  }
+/* 4 Images Hyperlinks Container */
+.image-container {
+    display: inline-block;
+    margin: 20px;
+    position: relative;
+    opacity: 0; /* Initially hide the image */
+    animation: fadeIn 1s ease forwards; /* Apply the fade-in animation */
+  }
+  
+  .image-container img {
+    width: 250px;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  .image-container a {
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+    position: relative;
+  }
+  
+/* Fade In Animation */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0; /* Start with full transparency */
+      transform: translateY(50px); /* Move the image down slightly */
+    }
+    100% {
+      opacity: 1; /* End with full opacity */
+      transform: translateY(0); /* Return to the normal position */
+    }
+  }
+  
+  
+/* Zoom Effect */
+.image-container:hover img {
+    transform: scale(1.1); /* Scale the image up slightly on hover */
+    transition: 0.5s;
+  }
+  
+  
+  /* Adding a pseudo-element for the hover effect on the link */
+  .image-container a::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.2); /* Semi-transparent black background */
+    opacity: 1; /* Initially hidden */
+    transition: 1s ; /* Adding transition for opacity */
+  }
+  
+  .image-container:hover a::before {
+    transition: 1s;
+    opacity: 0; /* Show the background on hover */
+  }
+/* Image ALT Styling */
+.context {
+    margin-top: 10px;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+  }
+
+/* Top Text */
+  #translucent-box {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255,255,255);
+    padding: 10px;
+    border-radius: 10px;
+    color: black;
+    opacity: 0.75;
+  }
+
+  #text {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  

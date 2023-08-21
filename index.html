@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/x-icon" href="/favicon.jpeg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DC | Loading.....</title>
+    <!-- JS to Redirect on specified time-->
+    <script>
+      function redirectAfterTime(url, time) {
+        setTimeout(function () {
+          window.location.href = url;
+        }, time);
+      }
+    </script>
+    <style>
+      * {
+        cursor: wait;
+      }
+      body {
+        position: absolute;
+        top: 50%;
+        left: 40%;
+        transform: translate(0%, -50%);
+        background-color: #fff;
+      }
+      .progress {
+        position: relative;
+        height: 20px;
+        width: 1100%;
+        border: 15px solid #808080;
+        border-radius: 30px;
+      }
+      .progress .color {
+        position: absolute;
+        background-color: #111;
+        width: 10px;
+        height: 20px;
+        border-radius: 30px;
+        animation: progres 4s infinite linear;
+      }
+      @keyframes progres {
+        0% {
+          width: 0%;
+        }
+        12.5% {
+          width: 12.5%;
+        }
+        25% {
+          width: 25%;
+        }
+        37.5% {
+          width: 37.5%;
+        }
+
+        50% {
+          width: 50%;
+        }
+        75% {
+          width: 50%;
+        }
+        100% {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <!--Progress Bar-->
+    <div class="progress">
+      <div class="color"></div>
+    </div>
+
+    <!-- JS for redirection at time-->
+    <script>
+      redirectAfterTime("home.html", 3900); // 5000 milliseconds = 5 seconds
+    </script>
+  </body>
+</html>

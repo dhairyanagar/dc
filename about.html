@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpeg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DC | More About</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/about.css" />
+    <link rel="stylesheet" href="stylesheets/time.css" />
+    <link rel="stylesheet" href="stylesheets/scroll.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+  </head>
+
+  <body>
+    <section style="background: #111; color: rgba(0, 0, 0, 0.5)">
+      <nav class="fill">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="hisworks.html">Discoveries</a></li>
+          <div id="DigitalCLOCK" class="clock" onload="showTime()"></div>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- Timeline Codes -->
+
+    <div class="container">
+      <div class="timeline">
+        <ul>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">1887</h3>
+              <h1>Early Life</h1>
+              <p>Srinivasa Ramanujan was born in Erode, Tamil Nadu, India.</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">1890-1905</h3>
+              <h1>Early Education and Self-Study</h1>
+              <p>
+                Ramanujan showed an early aptitude for mathematics, exploring
+                concepts on his own and developing his own theorems. Due to
+                financial constraints, he faced challenges in pursuing formal
+                education, but he continued to study mathematics independently.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">1910</h3>
+              <h1>Discovery of Pi Formulas</h1>
+              <p>
+                Ramanujan independently discovered formulas to calculate the
+                mathematical constant pi (π), which are now known as Ramanujan's
+                pi formulas.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">1911</h3>
+              <h1>Correspondence with Hardy</h1>
+              <p>
+                Ramanujan's mathematical work came to the attention of the
+                British mathematician G.H. Hardy through a letter with samples
+                of his theorems. Hardy recognized Ramanujan's genius and invited
+                him to England to further explore his mathematical ideas.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">1914</h3>
+              <h1>Move to England</h1>
+              <p>
+                Ramanujan moved to Cambridge, England, to collaborate with G.H.
+                Hardy at the University of Cambridge. He faced challenges in
+                adjusting to the English academic environment but continued to
+                produce groundbreaking work
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">1916</h3>
+              <h1>Scholarships and papers published</h1>
+              <p>
+                Ramanujan was awarded a Bachelor of Science degree by research
+                (Ph.D. equivalent) for his work on highly composite numbers. He
+                became a Fellow of the Royal Society, a prestigious honor for
+                his contributions to mathematics.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">1919</h3>
+              <h1>Health Challenges and Return to India</h1>
+              <p>
+                Ramanujan's health deteriorated due to a combination of factors,
+                including the climate and dietary changes in England. He
+                returned to India in 1919 and continued his mathematical work,
+                despite declining health.
+              </p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-content">
+              <h3 class="date">1920</h3>
+              <h1>Death and Legacy</h1>
+              <p>
+                January 26, 1920: Srinivasa Ramanujan passed away at the young
+                age of 32 due to health complications. His notebooks contained a
+                wealth of mathematical discoveries that continue to influence
+                and inspire mathematicians to this day.
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- The video -->
+    <video autoplay muted loop id="myVideo">
+      <source src="videodisc.mp4" type="video/mp4" />
+    </video>
+    <div class="overlay-video">
+      <video id="overlayVideo" controls>
+        <source src="a.mp4" type="video/mp4" />
+      </video>
+      <div class="textoverimage">
+        <h1>Above is a video about Late Mr. Srinivas Ramanujan</h1>
+      </div>
+    </div>
+    <!-- Redirection Box -->
+    <div class="redirection-box" onclick="redirectToPage()">
+      <img
+        class="box-image"
+        src="images/redirectboximg.jpeg"
+        alt="Redirection Box"
+      />
+      <h2>A BIOGRAPHY</h2>
+      <p>Click this box to open a biography of Late Mr. Srinivas Ramanujan</p>
+    </div>
+
+    <!--Redirection Box JS-->
+    <script>
+      function redirectToPage() {
+        window.location.href = "/ramabio.html";
+      }
+    </script>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>
+        &copy; This is a project of Design Championship 2023. Created by Dhairya
+        and Shresth
+      </p>
+      <a href="/credits.html">Credits</a>
+    </div>
+    <!-- Back To Top button -->
+    <a href="#" class="top">Back to Top &#8593;</a>
+
+    <!-- Time and Top Nav js-->
+
+    <script src="js/time.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

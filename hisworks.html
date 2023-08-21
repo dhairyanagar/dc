@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpeg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DC | More About</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/hisworks.css" />
+    <link rel="stylesheet" href="stylesheets/time.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Top Navigation -->
+    <section style="background: #111; color: rgba(0, 0, 0, 0.5)">
+      <nav class="fill">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="hisworks.html">Discoveries</a></li>
+          <div id="DigitalCLOCK" class="clock" onload="showTime()"></div>
+        </ul>
+      </nav>
+    </section>
+
+    <!-- The video -->
+    <div id="video-container">
+      <video id="background-video" autoplay loop muted>
+        <source src="videodisc.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <!-- Image Hyperlinks-->
+      <div id="content-container">
+        <div class="image-container">
+          <a href="/partition.html"
+            ><img src="images/partitiondisc.png" alt="Image 1"
+          /></a>
+          <p class="context">Partition Function</p>
+        </div>
+        <div class="image-container">
+          <a href="/piwork.html"><img src="images/pi.jpg" alt="Image 2" /></a>
+          <p class="context">Pi Formula</p>
+        </div>
+        <div class="image-container">
+          <a href="/mocktheta.html"
+            ><img src="images/mockthetadisc.png" alt="Image 2"
+          /></a>
+          <p class="context">Mock Theta Function</p>
+        </div>
+        <div class="image-container">
+          <a href="/magicnumber.html"
+            ><img src="images/magicnumber.png" alt="Image 2"
+          /></a>
+          <p class="context">Magic Number</p>
+        </div>
+      </div>
+      <!-- Text for intro of Discovery Page-->
+      <div id="translucent-box">
+        <p id="text">
+          There are 4 main discoveries of Srinivas Ramanujan. Let's dive into
+          them!
+        </p>
+      </div>
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+      <p>
+        &copy; This is a project of Design Championship 2023. Created by Dhairya
+        and Shresth
+      </p>
+      <a href="/credits.html">Credits</a>
+    </div>
+    <!-- Time and Top Navigation JS-->
+    <script src="js/time.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="stylesheets/scroll-bio.css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="icon" type="image/x-icon" href="images/favicon.jpeg">
+
+<title>A biography of Mr. Srinivas Ramanujan</title>
+<style>
+  body {
+    background: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  .header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-family:Comic Sans MS;
+  }
+  .container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  }
+  .scientist-image {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    transition: transform .5s; /* Animation */
+  }
+  .scientist-image:hover{
+    transform: scale(1.20); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  }
+  .story {
+    text-align: justify;
+    line-height: 1.5;
+    margin-top: 20px;
+    font-weight: bold;
+    font-size: large;
+  }
+  .quote {
+    font-style: italic;
+    color: #666;
+    margin-top: 20px;
+  }
+  .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  }
+
+  .button {
+  background-color: #ddd;
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 16px;
+
+  
+}
+
+.button:hover {
+  background-color: #f1f1f1;
+}
+
+#movableButton {
+  cursor:progress;
+  position: absolute;
+  top: 3%;
+  left: 1%;
+  padding: 10px 20px;
+  background-color: #111;
+  color: white;
+  border-radius: 20px;
+}
+
+</style>
+</head>
+<body>
+  <!-- Header of the Subpage-->
+<div class="header">
+  <h1>The Inspiring Journey of Mr. Srinivas Ramanujan</h1>
+  <a href="about.html" style="color: white; text-decoration: none;">
+    <button id="movableButton">
+      Back
+    </button>
+  </a>  
+</div>
+
+<!-- Full biography-->
+<div class="container">
+  <img class="scientist-image" src="images/ramabiop.jpeg" alt="Dr. Amelia Clarke">
+  <div class="story">
+    <p> Srinivasa Ramanujan, a brilliant mathematical genius, made significant contributions to the analytical theory of numbers, delving into topics such as elliptic functions, continued fractions, and infinite series.</p>
+    <p>Ramanujan was born at his grandmother's residence in Erode, a small village located approximately 400 km southwest of Madras (now known as Chennai). When Ramanujan was only one year old, his mother took him to Kumbakonam, a town about 160 km closer to Madras. His father worked as a clerk in a cloth merchant's shop in Kumbakonam. Unfortunately, in December 1889, he contracted smallpox.</p>
+    <p>Around the age of five, Ramanujan entered a primary school in Kumbakonam, attending various primary schools before joining the Town High School in Kumbakonam in January 1898. At the Town High School, he excelled in all subjects, demonstrating his prowess as a versatile scholar. By 1900, he began independently exploring mathematics, focusing on topics like geometric and arithmetic series.<span class="quote">"Curiosity is the compass guiding us through the uncharted territories of the universe."</span></p>
+    <p>In 1902, Ramanujan was introduced to the solution of cubic equations, and he later developed his approach to solving quartic equations. In the following year, he attempted, albeit unsuccessfully, to solve the quintic equation, unaware of its insolubility through radicals.</p>
+    <p>During his time at the Town High School, Ramanujan came across a concise mathematics book titled "Synopsis of Elementary Results in Pure Mathematics" by G.S. Carr. This book became his self-education tool, shaping his mathematical thinking and argumentative style, albeit with some limitations. The book contained theorems, formulas, and succinct proofs, along with an index to mathematical papers published in European Journals during the 19th century.</p>
+    <p>By 1904, Ramanujan was deeply immersed in research. He explored series such as and calculated Euler's constant with remarkable precision—up to 15 decimal places. Ramanujan's independent efforts led him to the study of Bernoulli numbers, revealing his natural inclination for mathematical discovery. <span class="quote">"Curiosity is the compass guiding us through the uncharted territories of the universe."</span></p>
+    <p>Due to his exceptional school performance, Ramanujan received a scholarship to Government College in Kumbakonam in 1904. However, his growing dedication to mathematics caused him to neglect his other subjects, leading to the non-renewal of his scholarship the following year. Financially strained and driven by his mathematical passion, he secretly left for Vizagapatnam, approximately 650 km north of Madras. Despite his circumstances, he continued his mathematical explorations, concentrating on hypergeometric series and uncovering connections between integrals and series, later identified as his study of elliptic functions.</p>
+    <p>In 1906, Ramanujan moved to Madras, enrolling in Pachaiyappa's College. His goal was to pass the First Arts examination, a requirement for admission to the University of Madras. Although he attended lectures at the college, health issues arose after three months of study. Despite his condition, he attempted the First Arts examination but excelled only in mathematics, leading to his failure in other subjects and, subsequently, the examination. This setback prevented him from entering the University of Madras. Over the next years, he engaged in independent mathematical pursuits, uninfluenced by contemporary research topics beyond the scope of Carr's book.</p>
+    <p>Continuing his mathematical pursuits, Ramanujan delved into the study of continued fractions and divergent series in 1908. During this phase, his health once again deteriorated, leading to an operation in April 1909. The recovery process was extended and demanding. In a turn of events, he entered into a marriage arranged by his mother on July 14, 1909, with a ten-year-old girl named S Janaki Ammal. However, he did not live with his wife until she reached the age of twelve. <span class="quote">"Curiosity is the compass guiding us through the uncharted territories of the universe."</span></p>
+    <p>Undeterred by his challenges, Ramanujan further developed his mathematical concepts, actively presenting and solving problems through contributions to the Journal of the Indian Mathematical Society. In 1910, he established connections between elliptic modular equations, showcasing his evolving expertise. His exceptional research paper on Bernoulli numbers, published in 1911 within the Journal of the Indian Mathematical Society, garnered significant recognition. Despite his lack of formal university education, his reputation as a mathematical prodigy began to spread across the Madras region.</p>
+    <p>In 1911, Ramanujan sought guidance from the founder of the Indian Mathematical Society regarding potential job opportunities. This endeavor led to his appointment to a temporary position at the Accountant General's Office in Madras. Subsequently, he received a suggestion to approach Ramachandra Rao, a Collector in Nellore. Ramachandra Rao, a founding member of the Indian Mathematical Society and instrumental in establishing the mathematics library, became an influential figure in Ramanujan's journey.</p>
+    <p>Ramachandra Rao advised Ramanujan to return to Madras, but his efforts to secure a scholarship were in vain. In 1912, Ramanujan applied for a clerk position in the accounts section of the Madras Port Trust. His application letter emphasized that he had passed the Matriculation Examination and studied up to First Arts but was hindered from pursuing further education due to several unfortunate circumstances. He conveyed his devotion to mathematics and his commitment to developing the subject.<span class="quote">"Curiosity is the compass guiding us through the uncharted territories of the universe."</span></p>
+    <p>Although Ramanujan lacked a university education, he was already recognized by the university mathematicians in Madras. Alongside his application, Ramanujan included a reference from E.W. Middlemast, the Professor of Mathematics at The Presidency College in Madras. Middlemast, who had graduated from St John's College, Cambridge, endorsed Ramanujan's application strongly. He described Ramanujan as a young man with extraordinary mathematical capacity, particularly in the realm of numbers. Middlemast noted Ramanujan's natural flair for computation and his swiftness in handling figures.    </p>
+    <p>Ramanujan's impressive recommendation from Middlemast led to his appointment as a clerk in the accounts section. Starting on March 1, 1912, he was fortunate to be surrounded by colleagues with mathematical training. S.N. Aiyar, the Chief Accountant of the Madras Port Trust, who was trained in mathematics, published a paper in 1913 on Ramanujan's work concerning the distribution of primes. C.L.T. Griffith, the professor of civil engineering at the Madras Engineering College, recognized Ramanujan's talents and connected him with M.J.M. Hill, a professor of mathematics at University College London.</p>
+    <p>Despite these interactions, Ramanujan faced dietary challenges due to his strict vegetarianism and experienced health problems. Despite his health issues, his collaboration with G.H. Hardy at the University of Cambridge yielded significant results. Hardy's efforts to teach Ramanujan formal mathematical methods were hindered by Ramanujan's continuous flow of original ideas. This collaboration was impactful, although it posed challenges for teaching Ramanujan rigorous mathematical approaches.<span class="quote">"Curiosity is the compass guiding us through the uncharted territories of the universe."</span></p>
+    <p>Hardy's colleague, Littlewood, was also asked to assist in teaching Ramanujan, but Ramanujan's responses to mathematical matters often overwhelmed Littlewood with a cascade of original ideas. The outbreak of World War I led to Littlewood's departure for war duty. Meanwhile, Hardy remained in Cambridge to collaborate with Ramanujan.</p>
+    <p>Their collaboration yielded valuable outcomes, although Ramanujan's health suffered during his first winter in England. He was unable to publish for several months due to his health. The decision was made to withhold publication of the results he obtained in India until the war ended, focusing instead on his work in England.</p>
+    <p>In 1916, Ramanujan graduated from Cambridge with a Bachelor of Arts by Research. Despite not having the proper qualifications, he was allowed to enroll in June 1914. His dissertation on Highly Composite Numbers included seven of his papers published in England.</span></p>
+    <p>Ramanujan's health deteriorated significantly in 1917, raising concerns that he might not survive. Though he improved slightly by September, he spent most of his time in nursing homes. In February 1918, Hardy wrote about Ramanujan's health issues, and a theory that he might have undergone an operation for a malignant growth. However, it was later discovered that tuberculosis was the primary issue. Ramanujan's acceptance as a fellow of the Cambridge Philosophical Society and the Royal Society followed.</p>
+    <p>Ramanujan's return to India in 1919 was marked by his poor health. Despite medical efforts, he passed away the following year.</p>
+    <p>The letters Ramanujan wrote to Hardy in 1913 contained numerous fascinating mathematical results, encompassing areas such as Riemann series, elliptic integrals, hypergeometric series, and functional equations of the zeta function. While his insights were brilliant, his understanding of mathematical proof was vague. Although he made several discoveries, some of his theorems on prime numbers were later found to be incorrect.</span></p>
+    <p>Ramanujan independently arrived at findings in hypergeometric series, including those of Gauss and Kummer. His work on partial sums and products of hypergeometric series contributed to significant advancements in the field. Notably, his work on partitioning integers into summands, represented by the number p(n), resulted in conjectures and proofs, with some proofs emerging posthumously. Ramanujan's joint paper with Hardy presented an asymptotic formula for p(n), with its accuracy later established by Rademacher.</p>
+    <p>Ramanujan's legacy endures through his unpublished notebooks, which continue to inspire mathematical research. G.N. Watson published numerous papers based on Ramanujan's work. Despite his brief life, Ramanujan's profound contributions have left an indelible mark on the realm of mathematics.</p>
+    <p></p>
+    <a href="#" class="top">Back to Top &#8593;</a>
+  </div>
+</div>
+<!-- Footer -->
+<div class="footer">
+  <p>&copy; This is a project of Design Championship 2023. Created by Dhairya and Shresth </p><a href="/credits.html">Credits</a>
+</div>
+</body>
+</html>

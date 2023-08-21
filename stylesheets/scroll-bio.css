@@ -1,0 +1,33 @@
+/* Back To Top in Biography Subpage */
+
+body {
+    grid-template-columns: auto 0px; 
+    background-color: #333;
+  }
+  
+  .top {
+    /* Concept Codes for the button */
+    --offset: 50px; 
+    
+    position: sticky;
+    bottom: 30px;   
+    left: 10px;   
+    margin-right:10px; 
+    place-self: end;
+    margin-top: calc(100vh + var(--offset));
+    
+    /* visual styling */
+    text-decoration: none;
+    padding: 10px;
+    font-family: sans-serif;
+    color: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.316);
+    border-radius: 100px;
+    white-space: nowrap;
+  }
+  
+/* Smooth Scrolling */
+  html,
+  body {
+      scroll-behavior: smooth;
+  }

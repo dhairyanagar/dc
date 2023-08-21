@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpeg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DC | Home</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/time.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <!-- Background IMG-->
+  <body
+    class="font-sans antialiased text-gray-900 leading-normal tracking-wider bg-cover"
+    style="background-image: url('images/newbg.png')"
+  >
+    <!-- Top Navigation-->
+    <section style="background: #111; color: rgba(0, 0, 0, 0.5)">
+      <nav class="fill">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="hisworks.html">Discoveries</a></li>
+          <div id="DigitalCLOCK" class="clock" onload="showTime()"></div>
+        </ul>
+      </nav>
+    </section>
+    <!-- Into Box-->
+    <div
+      class="max-w-4xl flex items-center h-auto lg:h-screen flex-wrap mx-auto my-32 lg:my-0"
+    >
+      <!--Main Col-->
+      <div
+        id="profile"
+        class="w-full lg:w-3/5 rounded-lg lg:rounded-l-lg lg:rounded-r-none shadow-2xl bg-white opacity-75 mx-6 lg:mx-0"
+      >
+        <div class="p-4 md:p-12 text-center lg:text-left">
+          <!-- Image for mobile view-->
+          <div
+            class="block lg:hidden rounded-full shadow-xl mx-auto -mt-16 h-48 w-48 bg-cover bg-center"
+            style="background-image: url('images/pic1.jpg')"
+          ></div>
+
+          <h1>Ramanujan : The Man Who Knew Infinity</h1>
+
+          <div
+            class="mt-6 pb-16 lg:pb-0 w-4/5 lg:w-full mx-auto flex flex-wrap items-center justify-between"
+          >
+            <p>
+              Srinivasa Ramanujan, an Indian mathematician born in 1887, made
+              remarkable strides in number theory despite limited formal
+              education.His groundbreaking work in infinite series, modular
+              forms, and π calculation earned recognition through collaboration
+              with G.H. Hardy.Ramanujan's legacy endures, inspiring
+              mathematicians globally with his intuitive and enduring
+              contributions.
+            </p>
+          </div>
+
+          <div class="pt-12 pb-8">
+            <a href="/about.html">
+              <button
+                class="bg-green-700 hover:bg-green-900 text-white font-bold py-2 px-4 rounded-full"
+              >
+                Know more
+              </button>
+            </a>
+          </div>
+        </div>
+      </div>
+      <!-- Resizing on Desktops-->
+      <div class="w-full lg:w-2/5">
+        <!-- Big profile image for side bar (desktop) -->
+        <img
+          src="images/pic2.jpg"
+          class="rounded-none lg:rounded-lg shadow-2xl hidden lg:block"
+        />
+      </div>
+
+      <!-- Contact US button-->
+    </div>
+    <div id="movableButton">
+      <a href="/contact.html" target="_blank">
+        <img src="images/contact.png" />
+      </a>
+    </div>
+    <!-- JS for Contact US button-->
+    <script>
+      const button = document.getElementById("movableButton");
+      let isDragging = false;
+      let offsetY;
+
+      button.addEventListener("mousedown", (e) => {
+        isDragging = true;
+        offsetY = e.clientY - button.getBoundingClientRect().top;
+      });
+
+      document.addEventListener("mousemove", (e) => {
+        if (!isDragging) return;
+
+        const y = e.clientY - offsetY;
+
+        button.style.top = `${y}px`;
+      });
+
+      document.addEventListener("mouseup", () => {
+        isDragging = false;
+      });
+    </script>
+    <!-- Footer -->
+    <div class="footer">
+      <p>
+        &copy; This is a project of Design Championship 2023. Created by Dhairya
+        and Shresth
+      </p>
+      <a href="/credits.html">Credits</a>
+    </div>
+    <!-- Time and Top Navigation JS-->
+
+    <script src="js/script.js"></script>
+    <script src="js/time.js"></script>
+  </body>
+</html>

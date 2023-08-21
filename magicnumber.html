@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpeg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scientist's Work - Subpage</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+        overflow-x: hidden;
+      }
+      header {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+        font-family:Comic Sans MS;
+
+      }
+      .content-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+
+      .content-container h2 {
+        color: rgb(0, 0, 0);
+        font-family: monospace;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        letter-spacing: 0.15em; /* Adjust as needed */
+        animation: typing 3.5s steps(30, end),
+          blink-caret 0.5s step-end infinite;
+      }
+      .content-container h3 {
+        color: rgb(0, 0, 0);
+        font-family: monospace;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        letter-spacing: 0.15em; /* Adjust as needed */
+      }
+      /* The typing effect */
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      video {
+        width: 100%;
+        max-width: 600px;
+        display: block;
+        margin: 0 auto;
+      }
+      #movableButton {
+        cursor: progress;
+        position: absolute;
+        top: 3%;
+        left: 1%;
+        padding: 10px 20px;
+        background-color: #111;
+        color: white;
+        border-radius: 20px;
+      }
+      .footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+      }
+
+      .image-container-left {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        left: -100%;
+        animation-name: fade-in-left;
+      }
+      .image-container-right {
+        position: absolute;
+        top: 80%;
+        transform: translateY(-50%);
+        opacity: 0;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        right: -100%;
+        animation-name: fade-in-right;
+      }
+
+      .image-container-left img {
+        max-width: 100%;
+        height: auto;
+        border: 2px solid #333; /* Add a border to the images */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow to the images */
+        border-radius: 20px; /* Rounded corners for the images */
+      }
+      .image-container-right img {
+        max-width: 100%;
+        height: auto;
+        border: 2px solid #333; /* Add a border to the images */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow to the images */
+        border-radius: 20px; /* Rounded corners for the images */
+      }
+
+      @keyframes fade-in-left {
+        0% {
+          left: -100%;
+          opacity: 0;
+        }
+        100% {
+          left: 1%;
+          opacity: 1;
+        }
+      }
+
+      @keyframes fade-in-right {
+        0% {
+          right: -100%;
+          opacity: 0;
+        }
+        100% {
+          right: 1%;
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header of the Subpage-->
+    <header>
+      <h1>Discoveries by Srinivas Ramanujan</h1>
+      <p>Magic Taxicab Number</p>
+      <a href="hisworks.html" style="color: white; text-decoration: none">
+        <button id="movableButton">Back</button>
+      </a>
+    </header>
+    <!-- All the contents-->
+    <div class="content-container">
+      <h2>Introduction</h2>
+      <p>
+        Taxicab numbers, explored by Ramanujan, are integers expressible as the
+        sum of two cubes in two distinct ways. 1729 is the smallest such number
+        (1^3 + 12^3, 9^3 + 10^3). These numbers captivate mathematicians and
+        have diverse applications.
+      </p>
+      <!-- Video-->
+      <video controls>
+        <source src="a.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <h2>Contributions</h2>
+      <p>It made an impact of mathematicians mind and their creativity.</p>
+    </div>
+    <div class="image-container-left">
+      <img src="images/magicnumbersub1.jpeg" alt="Left Fading Image" />
+    </div>
+    <div class="image-container-right">
+      <img src="images/magicnumbersub2.png" alt="Right Fading Image" />
+    </div>
+
+    <!-- Footer -->
+    <div class="footer">
+      <p>
+        &copy; This is a project of Design Championship 2023. Created by Dhairya
+        and Shresth
+      </p>
+      <a href="/credits.html">Credits</a>
+    </div>
+  </body>
+</html>

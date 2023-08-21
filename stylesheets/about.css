@@ -1,0 +1,297 @@
+/* Top Navigation Bar */
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 5px 0;
+  box-shadow: 0px 5px 0px #dedede;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+/* Small Transistions */
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+
+
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 1s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+/* Color Change on Hover */
+nav.fill ul li a:hover {
+  color: rgb(0, 0, 0);
+  z-index: 1;
+}
+
+
+
+/* Timeline Codes */
+
+.container  {
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px 0;
+  background-color: #111;
+}
+
+.timeline {
+  width: 80%;
+  height: auto;
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.timeline ul {
+  list-style: none;
+}
+/* Timeline Styling */
+.timeline ul li {
+  padding: 20px;
+  background-color: #1e1f22;
+  color: white;
+  border-radius: 10px;
+  margin-bottom: 20px;
+/* Animation on loading the page */
+  opacity: 0; /* Start with 0 opacity */
+  transform: translateY(20px); /* Move the element slightly down */
+  animation: fadeInUp 1s forwards ; /* Apply the animation */
+}
+
+/* Last Box shall have no margin */
+.timeline ul li:last-child {
+  margin-bottom: 0;
+}
+/* Heading Styling */
+.timeline-content h1 {
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+/* Content Styling */
+.timeline-content p {
+  font-size: 16px;
+  line-height: 30px;
+  font-weight: 300;
+}
+/* Year Styling */
+.timeline-content .date {
+  font-size: 12px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  letter-spacing: 2px;
+}
+/* Responsive Timeline */
+@media only screen and (min-width: 768px) {
+  .timeline:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 2px;
+    height: 100%;
+    background-color: gray;
+
+    opacity: 0; /* Start with 0 opacity */
+    transform: translateX(-50%); /* Move the element slightly down */
+    animation: fadeInUp 1s forwards; /* Apply the animation */
+  }
+/* FadeInUp Animation Codes */
+  @keyframes fadeInUp {
+    from {
+      opacity: 0;
+      transform: translateY(90px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(20);
+    }
+  }
+
+  .timeline ul li {
+    width: 50%;
+    position: relative;
+    margin-bottom: 50px;
+  }
+  /* Left Boxes */
+  .timeline ul li:nth-child(odd) {
+    float: left;
+    clear: right;
+    transform: translateX(-30px);
+    border-radius: 20px 0px 20px 20px;
+    transition: 1s ease; /* Smooth transition effect */
+  }
+  /* Left Boxes Transistion */
+  .timeline ul li:nth-child(odd):hover {
+    background-color: rgb(18,130,168); /* Color change on hover */
+    transform:translate(-60px,30px);
+    
+  }
+  /* Right Boxes */
+  .timeline ul li:nth-child(even) {
+    float: right;
+    clear: left;
+    transform: translateX(30px);
+    border-radius: 0px 20px 20px 20px;
+    transition: 1s ease; /* Smooth transition effect */
+  }
+  /* Right Box Transistion */
+  .timeline ul li:nth-child(even):hover {
+    background-color:rgb(18,130,168); /* Color change on hover */
+    transform:translate(60px,30px);
+    
+
+  }
+  /* Ordinary Styling of the Timeline */
+  .timeline ul li::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-radius: 30%;
+    background-color: transparent;
+    top: 0px;
+    transition: 1s;
+  }
+  .timeline ul li:nth-child(odd)::before {
+    transform: translate(50%, -50%);
+    right: -30px;
+   
+  }
+  .timeline ul li:nth-child(even)::before {
+    transform: translate(-50%, -50%);
+    left: -30px;
+  }
+  .timeline-content .date {
+    position: absolute;
+    top: -30px;
+  }
+  .timeline ul li:hover::before {
+    background-color: rgb(3, 64, 120);
+    transition: 1s;
+  }
+}
+ 
+
+
+
+/* Video CSS */
+
+/* Style the video: 100% width and height to cover the entire window */
+#myVideo {
+  position: relative;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+}
+
+
+/* Redirection Box */
+
+.redirection-box {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 30px;
+  border-radius: 0px;
+  cursor: pointer;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+.box-image {
+  position: relative;
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10%;
+  margin-left: 650px;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+/* Story video on the background video  */
+.overlay-video {
+  position: absolute;
+  top: 400%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Place it above the background video */
+}
+/* Text below the video */
+.textoverimage {
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1; /* Place it above the background video */
+  text-align: center;
+  color: white;
+  font-size: x-large;
+ 
+}
+
+
+
+/* Footer */
+.footer {
+  position: relative;
+  text-align: center;
+  padding: 20px;
+  background-color: #333;
+  color: white;
+}

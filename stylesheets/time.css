@@ -1,0 +1,18 @@
+/* Add transition property for opacity */
+.clock {
+    position: absolute;
+    top: 3%;
+    right: 20px; /* Adjust the right side alignment */
+    color: #aaa;
+    font-size: 14px;
+    font-weight: bold;
+    font-family: monospace;
+    letter-spacing: 5px;
+    opacity: 0; /* Initial opacity */
+    transition: opacity 1s ease-in-out; /* Fade-in transition effect */
+}
+
+/* Add class for showing clock after loading */
+.show-clock {
+    opacity: 1;
+}

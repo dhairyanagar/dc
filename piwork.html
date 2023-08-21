@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpeg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Scientist's Work - Subpage</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+        overflow-x: hidden;
+      }
+      header {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+        font-family:Comic Sans MS;
+
+      }
+      .content-container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 20px;
+        background-color: white;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+      }
+
+      .content-container h2 {
+        color: rgb(0, 0, 0);
+        font-family: monospace;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        letter-spacing: 0.15em; /* Adjust as needed */
+        animation: typing 3.5s steps(30, end),
+          blink-caret 0.5s step-end infinite;
+      }
+      .content-container h3 {
+        color: rgb(0, 0, 0);
+        font-family: monospace;
+        overflow: hidden; /* Ensures the content is not revealed until the animation */
+        letter-spacing: 0.15em; /* Adjust as needed */
+      }
+      /* The typing effect */
+      @keyframes typing {
+        from {
+          width: 0;
+        }
+        to {
+          width: 100%;
+        }
+      }
+
+      video {
+        width: 100%;
+        max-width: 600px;
+        display: block;
+        margin: 0 auto;
+      }
+      #movableButton {
+        cursor: progress;
+        position: absolute;
+        top: 3%;
+        left: 1%;
+        padding: 10px 20px;
+        background-color: #111;
+        color: white;
+        border-radius: 20px;
+      }
+      .footer {
+        text-align: center;
+        padding: 20px;
+        background-color: #333;
+        color: white;
+      }
+
+      .image-container-left {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        opacity: 0;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        left: -100%;
+        animation-name: fade-in-left;
+      }
+      .image-container-right {
+        position: absolute;
+        top: 80%;
+        transform: translateY(-50%);
+        opacity: 0;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        right: -100%;
+        animation-name: fade-in-right;
+      }
+
+      .image-container-left2 {
+        position: absolute;
+        top: 120%;
+        transform: translateY(-50%);
+        opacity: 0;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+        left: -100%;
+        animation-name: fade-in-left;
+      }
+
+      .image-container-left img {
+        max-width: 100%;
+        height: auto;
+        border: 2px solid #333; /* Add a border to the images */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow to the images */
+        border-radius: 20px; /* Rounded corners for the images */
+      }
+      .image-container-right img {
+        max-width: 25%;
+        height: auto;
+        border: 2px solid #333; /* Add a border to the images */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow to the images */
+        border-radius: 20px; /* Rounded corners for the images */
+      }
+
+      .image-container-left2 img {
+        max-width: 100%;
+        height: auto;
+        border: 2px solid #333; /* Add a border to the images */
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow to the images */
+        border-radius: 20px; /* Rounded corners for the images */
+      }
+
+      @keyframes fade-in-left {
+        0% {
+          left: -100%;
+          opacity: 0;
+        }
+        100% {
+          left: 1%;
+          opacity: 1;
+        }
+      }
+
+      @keyframes fade-in-right {
+        0% {
+          right: -100%;
+          opacity: 0;
+        }
+        100% {
+          right: -58%;
+          opacity: 1;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Header of the Subpage-->
+    <header>
+      <h1>Discoveries by Srinivas Ramanujan</h1>
+      <p>PI FORMULA</p>
+      <a href="hisworks.html" style="color: white; text-decoration: none">
+        <button id="movableButton">Back</button>
+      </a>
+    </header>
+    <!-- All the contents-->
+    <div class="content-container">
+      <h2>Introduction</h2>
+      <p>
+        Ramanujan's formula could do it in one term though and each successive
+        term adds up another 8 decimal places to the value of π. This formula
+        holds absolutely true for finding the value of π, but there is no clear
+        understanding of how he came up with the numbers in his formula like
+        9801 and 1103.
+      </p>
+
+      <video controls>
+        <source src="a.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+      <p></p>
+      <h2>Contributions</h2>
+      <h3>Computational Mathematics</h3>
+      <p>
+        Ramanujan's π formula provides a unique and efficient way to compute
+        approximations of the reciprocal of π. This can be especially useful in
+        numerical computations where high precision is required. It converges
+        quickly, meaning that accurate approximations can be obtained with
+        relatively few terms in the formula.
+      </p>
+      <h3>Testing and Benchmarking Algorithms</h3>
+      <p>
+        Ramanujan's formula can be used as a test case or benchmark for
+        numerical algorithms, particularly those involving nested radicals or
+        iterative methods. It serves as a challenging mathematical problem that
+        can help assess the accuracy and efficiency of algorithms for
+        approximating mathematical constants.
+      </p>
+      <h3>Inspiration for Further Research</h3>
+      <p>
+        Ramanujan's work, including his π formula, has inspired mathematicians
+        to develop new mathematical techniques, approaches, and formulas. His
+        unconventional methods have led to insights in various areas of
+        mathematics, and researchers continue to study his contributions to gain
+        new perspectives.
+      </p>
+    </div>
+    <div class="image-container-left">
+      <img src="images/piformualp1.png" alt="Left Fading Image" />
+    </div>
+    <div class="image-container-right">
+      <img src="images/piformualp2.jpg" alt="Right Fading Image" />
+    </div>
+    <div class="image-container-left2">
+      <img src="images/piformualp3.png" alt="Right Fading Image" />
+    </div>
+
+    <!-- Footer-->
+    <div class="footer">
+      <p>
+        &copy; This is a project of Design Championship 2023. Created by Dhairya
+        and Shresth
+      </p>
+      <a href="/credits.html">Credits</a>
+    </div>
+  </body>
+</html>

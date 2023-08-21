@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <link rel="icon" type="image/x-icon" href="images/favicon.jpeg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DC | More About</title>
+    <link rel="stylesheet" href="stylesheets/style.css" />
+    <link rel="stylesheet" href="stylesheets/gallery.css" />
+    <link rel="stylesheet" href="stylesheets/time.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/tailwindcss@2.2.19/dist/tailwind.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Top Navigation -->
+    <section style="background: #111; color: rgba(0, 0, 0, 0.5)">
+      <nav class="fill">
+        <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="hisworks.html">Discoveries</a></li>
+          <div id="DigitalCLOCK" class="clock" onload="showTime()"></div>
+        </ul>
+      </nav>
+    </section>
+    <!-- All the photos of the people -->
+    <div class="gallery">
+      <div class="image">
+        <a
+          href="https://www.indiatoday.in/education-today/gk-current-affairs/story/srinivasa-ramanujan-life-story-973662-2017-04-26#:~:text=Srinivasa%20Iyengar%20Ramanujan,Newton%20and%20Einstein."
+          target="_blank"
+        >
+          <img
+            src="https://akm-img-a-in.tosshub.com/indiatoday/images/story/201704/main-image-2_647_042617032633.jpg?size=690:388"
+            alt="Image 1"
+          />
+          <div class="overlay">
+            <p class="hover-text">Srinivasa Ramanujan</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="image">
+        <a
+          href="https://www.indiatoday.in/education-today/gk-current-affairs/story/srinivasa-ramanujan-life-story-973662-2017-04-26#:~:text=Ramanujan%27s%20house,in%20the%20numbers."
+          target="_blank"
+        >
+          <img
+            src="https://akm-img-a-in.tosshub.com/sites/media2/indiatoday/images/stories/2017March/home-of-srinivasa-ramanujan_042617032345.jpg"
+            alt="Image 2"
+          />
+          <div class="overlay">
+            <p class="hover-text">Ramanujan House</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="image">
+        <a
+          href="https://www.indiatoday.in/education-today/gk-current-affairs/story/srinivasa-ramanujan-life-story-973662-2017-04-26#:~:text=With%20parents%3B%20Source,age%20of%2014."
+          target="_blank"
+        >
+          <img
+            src="https://akm-img-a-in.tosshub.com/sites/media2/indiatoday/images/stories/2017March/ramanujan-athreya-kavithakidambi_042617032345.jpg"
+            alt="Image 3"
+          />
+          <div class="overlay">
+            <p class="hover-text">His Parents</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="image">
+        <a
+          href="https://www.indiatoday.in/education-today/gk-current-affairs/story/srinivasa-ramanujan-life-story-973662-2017-04-26#:~:text=Ramanujan%27s%20handwriting%3B%20Source,losing%20his%20scholarship."
+          target="_blank"
+        >
+          <img
+            src="https://akm-img-a-in.tosshub.com/sites/media2/indiatoday/images/stories/2017March/ramanujans-handwriting_042617032345.png"
+            alt="Image 4"
+          />
+          <div class="overlay">
+            <p class="hover-text">His Handwriting</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="image">
+        <a
+          href="https://www.indiatoday.in/education-today/gk-current-affairs/story/srinivasa-ramanujan-life-story-973662-2017-04-26#:~:text=Ramanujan%20with%20Janaki,S%20Janaki%20Ammal."
+          target="_blank"
+        >
+          <img
+            src="https://akm-img-a-in.tosshub.com/sites/media2/indiatoday/images/stories/2017March/ramanujan-and-janaki_042617032345.jpg"
+            alt="Image 5"
+          />
+          <div class="overlay">
+            <p class="hover-text">His Wife</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="image">
+        <a
+          href="https://www.indiatoday.in/education-today/gk-current-affairs/story/srinivasa-ramanujan-life-story-973662-2017-04-26#:~:text=GH%20Hardy%3B%20Source,refused%20to%20go."
+          target="_blank"
+        >
+          <img
+            src="https://akm-img-a-in.tosshub.com/sites/media2/indiatoday/images/stories/2017March/hardy_042617032345.jpg"
+            alt="Image 6"
+          />
+          <div class="overlay">
+            <p class="hover-text">GH Hardy</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="image">
+        <a
+          href="https://www.indiatoday.in/education-today/gk-current-affairs/story/srinivasa-ramanujan-life-story-973662-2017-04-26#:~:text=Ramanujan%27s%20mother,go%20to%20Cambridge."
+          target="_blank"
+        >
+          <img
+            src="https://akm-img-a-in.tosshub.com/sites/media2/indiatoday/images/stories/2017March/ramanujans-mother_042617032411.jpg"
+            alt="Image 6"
+          />
+          <div class="overlay">
+            <p class="hover-text">Ramanujan's Mother</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="image">
+        <a
+          href="https://www.indiatoday.in/education-today/gk-current-affairs/story/srinivasa-ramanujan-life-story-973662-2017-04-26#:~:text=Ramanujan%20(centre)%20at,Trinity%20College%2C%20Cambridge."
+          target="_blank"
+        >
+          <img
+            src="https://akm-img-a-in.tosshub.com/sites/media2/indiatoday/images/stories/2017March/in-london_042617032345.jpg"
+            alt="Image 6"
+          />
+          <div class="overlay">
+            <p class="hover-text">Ramanujan at Trinity College</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="image">
+        <a
+          href="https://www.indiatoday.in/education-today/gk-current-affairs/story/srinivasa-ramanujan-life-story-973662-2017-04-26#:~:text=Ramanujan%27s%20three%20notebooks,name%20a%20few."
+          target="_blank"
+        >
+          <img
+            src="https://akm-img-a-in.tosshub.com/sites/media2/indiatoday/images/stories/2017March/ramanujan-works_042617032345.png"
+            alt="Image 6"
+          />
+          <div class="overlay">
+            <p class="hover-text">Ramanajun's Lost Notebook</p>
+          </div>
+        </a>
+      </div>
+    </div>
+    <!-- Time and Top Nav JS-->
+    <script src="js/script.js"></script>
+    <script src="js/time.js"></script>
+    <!-- Footer -->
+    <div class="footer">
+      <p>
+        &copy; This is a project of Design Championship 2023. Created by Dhairya
+        and Shresth
+      </p>
+      <a href="/credits.html">Credits</a>
+    </div>
+  </body>
+</html>

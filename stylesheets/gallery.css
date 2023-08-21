@@ -1,0 +1,144 @@
+/* Top Navigation Bar */
+
+nav {
+  width: 100%;
+  margin: 0 auto;
+  background: #fff;
+  padding: 5px 0;
+  box-shadow: 0px 0px 0px #dedede;
+}
+nav ul {
+  list-style: none;
+  text-align: center;
+}
+nav ul li {
+  display: inline-block;
+}
+nav ul li a {
+  display: block;
+  padding: 15px;
+  text-decoration: none;
+  color: #aaa;
+  font-weight: 800;
+  text-transform: uppercase;
+  margin: 0 10px;
+}
+/* Small Transistions */
+nav ul li a,
+nav ul li a:after,
+nav ul li a:before {
+  transition: all .5s;
+}
+nav ul li a:hover {
+  color: #555;
+}
+
+
+/* stroke */
+nav.stroke ul li a,
+nav.fill ul li a {
+  position: relative;
+}
+nav.stroke ul li a:after,
+nav.fill ul li a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.';
+  color: transparent;
+  background: #aaa;
+  height: 1px;
+}
+
+nav.stroke ul li a:hover:after {
+  width: 100%;
+}
+
+nav.fill ul li a {
+  transition: all 1s;
+}
+
+nav.fill ul li a:after {
+  text-align: left;
+  content: '.';
+  margin: 0;
+  opacity: 0;
+}
+/* Color Change on Hover */
+nav.fill ul li a:hover {
+  color: rgb(0, 0, 0);
+  z-index: 1;
+}
+
+
+/* Gallery Page Codes */
+
+  .gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    padding: 20px;
+  }
+  /* Concent Codes for equal distancing */
+  .image {
+    flex-basis: calc(25% - 20px); 
+    position: relative;
+    overflow: hidden;
+    border-radius: 25px;
+    
+  }
+  /* Images styling */
+  .image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+  }
+/* Zoom In Effect */
+  .image:hover img {
+    transform: scale(1.1);
+  }
+  
+  /* Overlay Box (Black) */
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  /* Box Visibility */
+  .image:hover .overlay {
+    opacity: 1;
+  }
+  /* Text in the Box */
+  .hover-text {
+    color: white;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 4px;
+  }
+  
+/* Footer */
+ .footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+  } 
+/* Background Color */
+body{
+  background-color: #111;
+}
